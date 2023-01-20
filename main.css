@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background-color: #949494;
+}
+
+header {
+  background-color: #ffff;
+  padding: 16px 0;
+  color: #000000;
+  display: flex;
+  border-bottom: 16px solid #d4d4d4;
+  justify-content: space-evenly;
+  font-style: italic;
+}
+
+button {
+  background: #000000;
+  color: #ffff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #000000;
+  color: #d4d4d4;
+}
+
+form {
+  background-color: #0362fc;
+  padding: 24px 0;
+  text-align: center;
+  display: none;
+}
+
+form h2 {
+  margin-bottom: 16px;
+}
+
+form #botao-adcionar {
+  background-color: #2db93b;
+}
+
+form #botao-adcionar:hover {
+  background-color: #20852a;
+}
+
+form button {
+  padding: 4px 16px;
+}
+
+input {
+  border: 1px inset #ffff;
+}
+
+input,
+button {
+  padding: 4px 8px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul li {
+  max-width: 25%;
+  list-style: none;
+  position: relative;
+  max-height: 280px;
+  overflow-y: hidden;
+}
+
+ul li img {
+  width: 100%;
+}
+
+.overlay-imagem-link {
+  padding: 16px;
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all ease .2s;
+}
+
+.overlay-imagem-link a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li:hover .overlay-imagem-link{
+  opacity: 1;
+}
